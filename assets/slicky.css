@@ -1,0 +1,30 @@
+.slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    z-index: 15;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+
+
+    width: 36px;
+    height: 36px;
+    padding: .375rem;
+    border-radius: 100%;
+    background: rgba(0,0,0,.6);
+    margin: 0 10px;
+}
+
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+    color: unset;
+    outline: none;
+    background: rgba(0,0,0,.6);
+}
