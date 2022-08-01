@@ -1,0 +1,54 @@
+  {{ 'section-each-purchase.css' | asset_url | stylesheet_tag }}
+
+<div class="collection_shop_by_category">
+    <h2 class="product-includes-title">Each Purchase Includes:</h2>
+    <div class="icon_with_text_wrapper">
+    {%- for block in section.blocks -%}
+        <div class="icon_with_text_block">
+            <div style="display: flex;">
+                {% if block.settings.svg_logo != blank %}
+                    <img src="{{ block.settings.svg_logo.url }}" alt="{{ block.settings.svg_logo.alt }}" />
+                {% endif %}
+            </div>
+            <p class="icon_text --quote" style="margin-left: 30px;">
+                {{ block.settings.heading | escape }}
+            </p>
+        </div>   
+    {%- endfor -%}
+    </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Each Purchase",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Text",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Text Each Purchase"
+        },
+        {
+            "type": "url",
+            "id": "svg_logo",
+            "label": "Image"
+        }
+      ]
+    }
+    ],
+  "presets": [
+    {
+      "name": "Each Purchase"
+    }
+  ]
+}
+{% endschema %} 

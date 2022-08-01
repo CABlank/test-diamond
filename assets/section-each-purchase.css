@@ -1,0 +1,80 @@
+    .collection_shop_by_category {
+    padding: 5px 0 30px;
+    }
+
+    .product-includes-title {
+    font-size: 24px!important;
+    }
+    .product-includes-title {
+        font-family: Zenon;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px!important;
+        line-height: 52px;
+        letter-spacing: .02em;
+        color: #2d2d2d;
+        text-align: center;
+    }
+
+    .collection_shop_by_category .icon_with_text_wrapper {
+    grid-template-columns: repeat(4,1fr);
+    gap: 28px;
+    }
+    .collection_shop_by_category .icon_with_text_wrapper {
+    margin-top: 30px;
+    display: flex;
+    place-content: center;
+    column-gap: 40px;
+    padding: 0 12px;
+    grid-template-columns: repeat(2,1fr);
+    }
+
+    .collection_shop_by_category .icon_with_text_wrapper .icon_with_text_block {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    }
+    .collection_shop_by_category .icon_with_text_wrapper .icon_with_text_block {
+        text-align: left;
+        max-width: 300px;
+    }
+    .collection_shop_by_category .icon_with_text_wrapper .icon_with_text_block {
+        flex-direction: row;
+    }
+    .collection_shop_by_category .icon_with_text_wrapper .icon_with_text_block {
+        text-align: center !important;
+        display: -webkit-inline-box;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: .5rem;
+        margin-bottom: 1rem;
+    }
+    .min-w-\[28px\] {
+    min-width: 28px;
+    }
+    .min-h-\[28px\] {
+        min-height: 28px;
+    }
+
+    .collection_shop_by_category .icon_with_text_wrapper .icon_with_text_block {
+
+    text-align: left !important;
+        max-width: 300px;
+    }
+
+    .collection_shop_by_category .icon_with_text_wrapper .icon_with_text_block:first-child .icon_text {
+    padding: 0 5px;
+    }
+    .collection_shop_by_category .icon_with_text_wrapper .icon_with_text_block:first-child .icon_text {
+        padding: 0 5px;
+    }
+    .collection_shop_by_category .icon_with_text_wrapper .icon_with_text_block .icon_text {
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 16px;
+        letter-spacing: .175em;
+        text-transform: uppercase;
+        color: #000;
+    }
