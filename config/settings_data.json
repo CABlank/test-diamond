@@ -161,7 +161,7 @@
           "bf43cde6-9b6a-4e1c-bfc0-8a660a1eb41e": {
             "type": "link_lists",
             "settings": {
-              "bottom_menu": "footer"
+              "bottom_menu": "bottom-footer-menu"
             }
           }
         },
