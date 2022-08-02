@@ -126,6 +126,7 @@
           "logo_width": 90,
           "logo_position": "middle-left",
           "menu": "main-menu",
+          "menu_type_desktop": "dropdown",
           "show_line_separator": true,
           "enable_sticky_header": true,
           "margin_bottom": 0,
@@ -136,37 +137,44 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "footer-0": {
+          "cf6dbb10-00a8-43bc-ae3d-902ef9d5a81b": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
+              "heading": "About Us",
               "menu": "footer"
             }
           },
-          "footer-1": {
+          "f2dfbe11-1864-4776-9f94-ac67ec0bcf90": {
             "type": "link_list",
             "settings": {
-              "heading": "Info",
-              "menu": "footer"
+              "heading": "Customer Service",
+              "menu": "second-footer-menu"
             }
           },
-          "footer-2": {
-            "type": "text",
+          "a5a25d6f-155c-4099-a473-89f694ca5305": {
+            "type": "link_list",
             "settings": {
-              "heading": "Our mission",
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+              "heading": "Savings & Rewards",
+              "menu": "third-footer-menu"
+            }
+          },
+          "77bdfd37-8018-4c80-89b9-278d883c268d": {
+            "type": "link_lists",
+            "settings": {
+              "bottom_menu": "bottom-footer-menu"
             }
           }
         },
         "block_order": [
-          "footer-0",
-          "footer-1",
-          "footer-2"
+          "cf6dbb10-00a8-43bc-ae3d-902ef9d5a81b",
+          "f2dfbe11-1864-4776-9f94-ac67ec0bcf90",
+          "a5a25d6f-155c-4099-a473-89f694ca5305",
+          "77bdfd37-8018-4c80-89b9-278d883c268d"
         ],
         "settings": {
           "color_scheme": "background-1",
           "newsletter_enable": true,
-          "newsletter_heading": "Subscribe to our emails",
+          "newsletter_heading": "Let's keep in touch!",
           "show_social": true,
           "enable_country_selector": false,
           "enable_language_selector": false,
@@ -190,7 +198,10 @@
           "color_scheme": "background-1"
         }
       }
-    }
+    },
+    "content_for_index": [
+
+    ]
   },
   "presets": {
     "Default": {
