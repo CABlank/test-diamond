@@ -247,9 +247,17 @@
     }
   }
   @media screen and (min-width: 768px) {
-    .footer {
-      margin-top: {{ section.settings.margin_top }}px;
+    .footer-block__heading2{
+      margin-left:0px !important
     }
+
+    .image-responsive_display{
+      display:none
+    }
+    .mobile-display{
+      display:none
+    }
+
   }
     .hover-underline-animation {
     display: inline-block;
