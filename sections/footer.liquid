@@ -64,6 +64,16 @@
   .padding-img{
     padding: 2rem 0
   }
+  .newsletter-form__button:not(:focus-visible):not(.focused){
+    width: 120px;
+    background: #fff;
+    margin-right: 5px;
+    border-radius: 100px;
+    height: 35px;
+    margin-top: 6px;
+    font-size: 11px;
+    font-weight:700
+  }
   @media screen and (min-width: 1440px){
     .footer__content-top,.footer__content-bottom{
       max-width: 1328px !important
@@ -190,7 +200,7 @@
                     {{ 'newsletter.label' | t }}
                   </label>
                   <button type="submit" class="newsletter-form__button field__button" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
-                    {% render 'icon-arrow' %}
+                    Sign Me Up
                   </button>
                 </div>
                 {%- if form.errors -%}
