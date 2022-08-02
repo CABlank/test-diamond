@@ -51,6 +51,16 @@
     height:50px;
     margin-top:2rem
   }
+  .bottom-footer__links{
+    display:flex;
+    justify-content:center;
+    list-style:none
+  }
+  .bottom__link-item:before{
+    content: "|";
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
   .list-menu__item--link:hover:after{
     content: "";
     -webkit-transform: translate(0,0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
@@ -346,12 +356,12 @@
 
   <div class="footer__content-bottom">
     <div>
-      <ul>
+      <ul class="bottom-footer__links">
         {% for block in section.blocks %}
           {% if block.type == 'link_lists' %}
             {%- for link in block.settings.bottom_menu.links -%}
-            <li>
-              <a href="{{ link.url }}">{{ link.title }}</a>
+            <li class="bottom__link-item">
+              <a href="{{ link.url }}" class="bottom__link-anchor">{{ link.title }}</a>
             </li>
             {% endfor %}
           {% endif %}
