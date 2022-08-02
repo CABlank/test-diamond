@@ -369,7 +369,7 @@
         {% for block in section.blocks %}
           {% if block.type == 'link_lists' %}
             {%- for link in block.settings.bottom_menu.links -%}
-            <li {% if forloop.last %}class="bottom__link-item"{% endif %}>
+            <li {% unless forloop.last %}class="bottom__link-item"{% endunless %}>
               <a href="{{ link.url }}" class="bottom__link-anchor">{{ link.title }}</a>
             </li>
             {% endfor %}
