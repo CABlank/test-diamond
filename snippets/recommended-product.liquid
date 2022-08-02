@@ -1,0 +1,54 @@
+{% assign current = product.selected_or_first_available_variant.id %}
+
+  {% for product in collections.all.products %}
+    {% for collection in product.collections %}
+      {% if collection.title == 'Best_Sellers' %} 
+
+      {% unless current == product.selected_or_first_available_variant.id %}
+
+      {% assign recommended = product.selected_or_first_available_variant.id %}
+
+      <div class="product-item">
+         <h2> Recommended product for you </h2>
+          <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />    
+          <h3 class="shop-now" >{{ product.title | escape  }}</h3>    
+          <h3 class="shop-now" >{{ product.price  | money | strip_html  }}</h3>     
+          <a onclick="addItemToCart();" href="JavaScript:setTimeout(loadUrl,500)" style="max-width: 240px;" type="submit" name="add" class="product-form__submit button button--full-width button--secondary">
+              <span>Add All to Cart</span>
+          </a>
+      </div>
+      {% endunless %}
+
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+
+
+<script> 
+
+        function loadUrl(){
+            window.location.href = "/cart";
+        }
+      
+        let items = [
+                        {
+                            id: {{current}},
+                            quantity: 1
+                        },
+                        {
+                            id: {{recommended}},
+                            quantity: 1
+                        }
+                    ];
+
+        function addItemToCart() {
+              fetch('/cart/add.js', {
+                  method: "post",
+                  headers: { 'content-type': 'application/json' },
+                  body: JSON.stringify({
+                      items: items
+                  })
+              })
+          };
+
+</script>
