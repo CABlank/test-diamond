@@ -147,22 +147,22 @@
           "footer-1": {
             "type": "link_list",
             "settings": {
-              "heading": "Info",
-              "menu": "footer"
+              "heading": "Customer Service",
+              "menu": "second-footer-menu"
             }
           },
-          "footer-2": {
-            "type": "text",
+          "3fdebf7a-01a0-441d-866f-33f8d962c953": {
+            "type": "link_list",
             "settings": {
-              "heading": "Our mission",
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+              "heading": "Savings & Rewards",
+              "menu": "third-footer-menu"
             }
           }
         },
         "block_order": [
           "footer-0",
           "footer-1",
-          "footer-2"
+          "3fdebf7a-01a0-441d-866f-33f8d962c953"
         ],
         "settings": {
           "color_scheme": "background-1",
