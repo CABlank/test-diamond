@@ -26,6 +26,9 @@
         text-decoration:underline;
         font-weight:600
   }
+  .list-menu__item--active{
+    text-decoration:none
+  }
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
