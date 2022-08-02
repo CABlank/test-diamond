@@ -256,6 +256,14 @@
                           </a>
                         </li>
                       {%- endif -%}
+                      {%- if settings.social_instagram_link != blank -%}
+                        <li class="list-social__item">
+                          <a href="{{ settings.social_instagram_link }}" class="link list-social__link" >
+                            {%- render 'icon-instagram' -%}
+                            <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
+                          </a>
+                        </li>
+                      {%- endif -%}
                       {%- if settings.social_facebook_link != blank -%}
                         <li class="list-social__item">
                           <a href="{{ settings.social_facebook_link }}" class="link list-social__link" >
@@ -269,14 +277,6 @@
                           <a href="{{ settings.social_pinterest_link }}" class="link list-social__link" >
                             {%- render 'icon-pinterest' -%}
                             <span class="visually-hidden">{{ 'general.social.links.pinterest' | t }}</span>
-                          </a>
-                        </li>
-                      {%- endif -%}
-                      {%- if settings.social_instagram_link != blank -%}
-                        <li class="list-social__item">
-                          <a href="{{ settings.social_instagram_link }}" class="link list-social__link" >
-                            {%- render 'icon-instagram' -%}
-                            <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
                           </a>
                         </li>
                       {%- endif -%}
