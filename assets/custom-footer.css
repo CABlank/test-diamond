@@ -2,12 +2,6 @@
   .field__label, .customer .field label{
     font-size:12px !important;
   }
-  .footer {
-    margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
-      background-image: url(//cdn.shopify.com/s/files/1/0017/7461/6627/t/453/assets/footer-bg-new.png?v=1525467…),linear-gradient(180deg,#133e42,#082023);
-      background-size:cover;
-      background-repeat:no-repeat;
-  }
   .footer-block__heading{
         color:#fff;
         text-decoration:underline;
