@@ -33,13 +33,14 @@
     transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
     transform-origin:left;
     transition-duration:.15s;
-    transform:scaleX(0)
+    transform:scaleX(0);
+    border-bottom-width: 1px;
   }
   .list-menu__item--link:hover:after{
     transform:scaleX(1)
   }
   .list-menu__item--link:hover{
-    text-decoration:none
+    text-decoration:none !important
   }
   .list-menu__item--active{
     text-decoration:none
