@@ -168,9 +168,11 @@
     }
     .accordion-button::after{
       content: url(//cdn.shopify.com/s/files/1/0017/7461/6627/t/453/assets/accordion-icon.svg?v=1050907…);
+      background-image:unset
     }
     .accordion-button:not(.collapsed)::after{
-      transform:scale(1.15) rotate(45deg)
+      transform:scale(1.15) rotate(45deg);
+      background-image:unset
     }
     .accordion-flush .accordion-item .accordion-button{
       background:transparent !important;
