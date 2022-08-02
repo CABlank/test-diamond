@@ -27,7 +27,6 @@
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
- 
   @media screen and (min-width: 768px) {
     .footer {
       margin-top: {{ section.settings.margin_top }}px;
@@ -47,28 +46,6 @@
     }
 
   }
-    .hover-underline-animation {
-    display: inline-block;
-    position: relative;
-    color: #ffffff;
-  }
-  .hover-underline-animation:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 0.5px;
-    bottom: 0;
-    left: 0;
-    background-color: #ffffff;
-    transform-origin: bottom left;
-    transition: transform 0.25s ease-out;
-  }
-  .hover-underline-animation:hover:after {
-    transform: scaleX(1);
-  }
-
-  
 {%- endstyle -%}
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
