@@ -141,6 +141,11 @@
   .footer__content-bottom{
         border-top: solid 1px #fff3;
   }
+  @media (max-width:768px){
+    .display-desktop{
+      display:none
+    }
+  }
   @media (min-width:768px) and (max-width:1023px){
     .grid--4-col-tablet .grid__item{
       width:32%;
@@ -207,7 +212,7 @@
         -%}
         <div class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet {{ footer_grid_class }}">
           {%- for block in section.blocks -%}
-            <div class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
+            <div class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %} desktop-display" {{ block.shopify_attributes }}>
               {%- if block.settings.heading != blank -%}
                 <h2 class="footer-block__heading">{{- block.settings.heading | escape -}}</h2>
               {%- endif -%}
