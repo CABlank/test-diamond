@@ -238,7 +238,8 @@
                   <button type="submit" class="newsletter-form__button field__button" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
                     Sign Me Up
                   </button>
-                  {%- if section.settings.show_social -%}
+                </div>
+                {%- if section.settings.show_social -%}
                     <ul class="footer__list-social list-unstyled list-social" role="list">
                       {%- if settings.social_twitter_link != blank -%}
                         <li class="list-social__item">
@@ -314,7 +315,6 @@
                       {%- endif -%}
                     </ul>
                   {%- endif -%}
-                </div>
                 {%- if form.errors -%}
                   <small class="newsletter-form__message form__message" id="ContactFooter-error">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
                 {%- endif -%}
