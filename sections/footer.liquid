@@ -6,7 +6,6 @@
 <link rel="stylesheet" href="{{ 'component-list-social.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'disclosure.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'custom-footer.css' | asset_url }}" media="print" onload="this.media='all'">
 
 <noscript>{{ 'component-newsletter.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-list-menu.css' | asset_url | stylesheet_tag }}</noscript>
@@ -15,7 +14,227 @@
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'disclosure.css' | asset_url | stylesheet_tag }}</noscript>
 
+{%- style -%}
 
+  .footer {
+    margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
+      background-image: url(//cdn.shopify.com/s/files/1/0017/7461/6627/t/453/assets/footer-bg-new.png?v=1525467…),linear-gradient(180deg,#133e42,#082023);
+      background-size:cover;
+      background-repeat:no-repeat;
+  }
+
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  .section-footer-padding{
+    padding-bottom:0px !important;
+    padding-top:0px !important
+  }
+  .bottom__link-anchor{
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    font-size:11px
+  }
+  .bottom__link-anchor:hover{
+    color:#fff
+  }
+  .img-width{
+    max-width:240px;
+  }
+  .padding-img{
+    padding: 2rem 0;
+
+  }
+  .newsletter-form__field-wrapper .field__input{
+    border:1px solid #fff;
+    border-radius:100px;
+    background:transparent;
+    color:#fff
+  }
+  .field__label{
+    color:#fff
+  }
+  .field:after{
+    border-color:transparent;
+    content:none
+  }
+  .field:before{
+    border-color:transparent
+  }
+  .newsletter-form__button:hover{
+    background: rgba(255,255,255,.9)!important;
+  }
+  .newsletter-form__button:not(:focus-visible):not(.focused){
+    width: 120px;
+    background: #fff;
+    margin-right: 5px;
+    border-radius: 100px;
+    height: 34px;
+    margin-top: 4px;
+    font-size: 11px;
+    font-weight: 700;
+}
+  }
+  .footer__content-bottom{
+        border-top: solid 1px #fff3;
+  }
+  .accordion-button:focus{
+    border-color:transparent !important;
+    box-shadow: none
+  }
+  @media (min-width:768px) and (max-width:1023px){
+    .grid--4-col-tablet .grid__item{
+      width:32%;
+    }
+    .footer-block__heading2{
+      margin-left:unset
+    }
+    .list-social{
+      justify-content:left !important
+    }
+  }
+  @media screen and (max-width: 767px){
+    .footer-block.grid__item {
+        padding: 0;
+        width: 100%;
+    }
+    .footer-block.grid__item,.footer-block__heading{
+      margin:0px !important
+    }
+    .footer-block__heading{
+      background:transparent;
+      text-decoration:none;
+      border-bottom:1px solid #fff
+    }
+    .accordion-button::after{
+      content: url(//cdn.shopify.com/s/files/1/0017/7461/6627/t/453/assets/accordion-icon.svg?v=1050907…);
+      background-image:unset
+    }
+    .accordion-button:not(.collapsed)::after{
+      transform:scale(1.15) rotate(45deg);
+      background-image:unset
+    }
+    .accordion-flush .accordion-item .accordion-button{
+      background:transparent !important;
+      color:#fff;
+      font-size:11px;
+      font-weight:700;
+    padding-left: 0px;
+    padding-right: 0px;
+    }
+    .footer-block.grid__item{
+      background:transparent 
+    }
+    .footer-block__details-content{
+      margin-bottom:0px
+    }
+    .accordion-body{
+      padding:0px;
+      border-bottom: 1px solid #fff;
+    }
+    .list-social__link{
+      margin-right:5px;
+      margin-left:5px
+    }
+    .desktop-display,.img-width{
+      display:none
+    }
+    .footer-block__heading2{
+      text-align:center;
+      font-size:11px;
+      padding-top: 2.5rem;
+    padding-bottom: 1rem;
+    }
+    .list-social{
+      justify-content:center !important
+    }
+    .bottom__link-anchor,.list-menu__item--link{
+      font-size:11px
+    }
+    .bottom__link-item:before{
+      margin-left:.5rem;
+      margin-right:.5rem
+    }
+    .image-responsive_display{
+      max-width:270px;
+      padding-top:2.5rem
+    }
+    .accordion.accordion-flush{
+      width:100%
+    }
+    .footer-block__newsletter:not(:only-child) .footer__newsletter{
+      margin:auto
+    }
+  }
+  @media screen and (min-width: 1440px){
+    .footer__content-top,.footer__content-bottom{
+      max-width: 1328px !important
+    }
+  }
+  @media screen and (min-width: 1024px){
+    .footer__content-top,.footer__content-bottom{
+      max-width:96%;
+      margin:auto
+    }
+    .grid--4-col-tablet .grid__item{
+      width:20%
+    }
+    .desktop-width-form{
+      width:30% !important
+    }
+  }
+  @media screen and (max-width:1023px){
+    .footer__content-top,.footer__content-bottom{
+      max-width:90.67%;
+      margin:auto;
+      padding-left:0px;
+      padding-right:0px
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .footer {
+      margin-top: {{ section.settings.margin_top }}px;
+    }
+    .footer-block__heading2{
+      margin-left:0px !important
+    }
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+    .image-responsive_display{
+      display:none
+    }
+    .mobile-display{
+      display:none
+    }
+
+  }
+    .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #ffffff;
+  }
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 0.5px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+  }
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+  }
+
+  
+{%- endstyle -%}
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
