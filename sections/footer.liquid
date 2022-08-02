@@ -110,6 +110,9 @@
     text-decoration:none;
     font-weight:600
   }
+  .bottom__link-anchor:hover{
+    color:#fff
+  }
   .img-width{
     max-width:240px;
   }
@@ -530,7 +533,7 @@
           {% if block.type == 'link_lists' %}
             {%- for link in block.settings.bottom_menu.links -%}
             <li {% unless forloop.first %}class="bottom__link-item"{% endunless %}>
-              <a href="{{ link.url }}" class="bottom__link-anchor">{{ link.title }}</a>
+              <a href="{{ link.url }}" class="bottom__link-anchor hover-underline-animation">{{ link.title }}</a>
             </li>
             {% endfor %}
           {% endif %}
