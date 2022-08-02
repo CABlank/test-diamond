@@ -129,7 +129,7 @@
     font-size: 11px;
     font-weight: 700;
 }
-  }
+  
   .footer__content-bottom{
         border-top: solid 1px #fff3;
   }
@@ -253,10 +253,7 @@
     .footer-block__heading2{
       margin-left:0px !important
     }
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
+
     .image-responsive_display{
       display:none
     }
