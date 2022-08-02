@@ -194,7 +194,7 @@
       padding-right:0px
     }
   }
-  @media screen and (min-width: 750px) {
+  @media screen and (min-width: 768px) {
     .footer {
       margin-top: {{ section.settings.margin_top }}px;
     }
@@ -202,6 +202,9 @@
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+    .image-responsive_display{
+      display:none
     }
   }
 {%- endstyle -%}
@@ -267,6 +270,7 @@
             </div>
           {%- endfor -%}
         <div class="footer-block grid__item footer-block--menu desktop-width-form">
+        <img src="" class="image-responsive_display">
         {%- if section.settings.newsletter_enable -%}
           <div class="footer-block__newsletter">
             {%- if section.settings.newsletter_heading != blank -%}
