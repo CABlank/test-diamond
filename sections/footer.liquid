@@ -179,6 +179,9 @@
       max-width:96%;
       margin:auto
     }
+    .grid--4-col-tablet .grid__item{
+      width:20%
+    }
   }
   @media screen and (max-width:1023px){
     .footer__content-top,.footer__content-bottom{
@@ -260,7 +263,7 @@
                 {%- endcase -%}
             </div>
           {%- endfor -%}
-        <div class="footer-block grid__item footer-block--menu">
+        <div class="footer-block grid__item footer-block--menu desktop-width-form">
         {%- if section.settings.newsletter_enable -%}
           <div class="footer-block__newsletter">
             {%- if section.settings.newsletter_heading != blank -%}
