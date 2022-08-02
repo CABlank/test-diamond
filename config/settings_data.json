@@ -157,12 +157,19 @@
               "heading": "Savings & Rewards",
               "menu": "third-footer-menu"
             }
+          },
+          "bf43cde6-9b6a-4e1c-bfc0-8a660a1eb41e": {
+            "type": "link_lists",
+            "settings": {
+              "bottom_menu": "footer"
+            }
           }
         },
         "block_order": [
           "footer-0",
           "footer-1",
-          "3fdebf7a-01a0-441d-866f-33f8d962c953"
+          "3fdebf7a-01a0-441d-866f-33f8d962c953",
+          "bf43cde6-9b6a-4e1c-bfc0-8a660a1eb41e"
         ],
         "settings": {
           "color_scheme": "background-1",
