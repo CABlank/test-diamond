@@ -226,8 +226,6 @@
                             {{ link.title }}
                           </a>
                         </li>
-                      {%- endfor -%}
-                    </ul>
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingOne">
@@ -240,6 +238,8 @@
                         </div>
                       </div>
                     </div>
+                      {%- endfor -%}
+                    </ul>
                   {%- endif -%}
                 {%- when 'image' -%}
                   <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
